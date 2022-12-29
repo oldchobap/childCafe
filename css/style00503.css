@@ -1,0 +1,95 @@
+.leftLine .leftUl li:last-child{
+  scale: 1.5;
+  color: orange;
+  font-weight: bold;
+}
+
+.rightLine .gugun{
+  margin-right: 20px;
+}
+
+.rightLine .contain{
+  display: flex;  
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.rightLine .item{
+  position: relative;
+  width: 41%;
+}
+
+.rightLine .text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightLine button{
+  width: 100px ;
+  height: 30px;
+  color: #fff;
+  background-color: orange;
+  border: 0;
+  cursor: pointer;
+}
+
+.rightLine .tit{
+  width: 80%;
+}
+
+.rightLine .infoWrap{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #fff;
+}
+
+.rightLine .infoContain{
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  padding-right: 0;
+
+}
+
+.rightLine .info{
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+  overflow: auto;
+  height: 420px;
+}
+
+.rightLine .info p{
+  color: orange;
+  padding-top: 10px;
+}
+
+
+.rightLine .close{
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  top: 0px;
+  right: 0px;
+}
+
+
+footer{
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+footer p{
+  color: #888;
+}

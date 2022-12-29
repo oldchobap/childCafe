@@ -1,0 +1,62 @@
+.leftLine .leftUl li:nth-child(2){
+    color: orange;
+    scale: 1.5;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 24px;
+}
+
+.item{
+    margin-top: 40px;
+    border-top: 5px solid #000;
+    display: flex;
+}
+
+.rightLine li{
+    height: 50px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 0;
+}
+
+.rightLine li:first-child{
+    background-color: #ccc;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.rightLine .line4 li:first-child{
+    border-right: 0;
+}
+
+.rightLine .line1{
+    border-left: 1px solid #ccc;
+}
+
+.rightLine .line1, .rightLine .line3{
+    width: 30%;
+}
+
+.rightLine .line2, .rightLine .line4{
+    width: 20%;
+}
+
+.rightLine .row2{
+    margin-top: 40px;
+}
+
+.rightLine button{
+    width: 100px;
+    border: 0;
+    background-color: orange;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+}

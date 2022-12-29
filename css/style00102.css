@@ -1,0 +1,29 @@
+.leftLine li:last-child{
+    color: orange;
+    scale: 1.5;
+    font-weight: bold;
+}
+
+.row1{
+    width: 100%;
+}
+
+.row1 .cafe{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.row1 .cafe p{
+    width: 33%;
+}
+
+.row1 .item li{
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.row1 .item p{
+    width: 33%;
+}

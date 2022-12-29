@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="wrap">
+                <h1>logo</h1>
+                <ul class="util">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                    </li>
+                </ul>
+                <ul class="gnb">
+                    <li>
+                        <a href="index00101.html" class="kids">키즈카페</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00101.html">공공형 키즈카페</a>
+                            </li>
+                            <li>
+                                <a href="index00102.html">부산시 키즈카페</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index00201.html">의료</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00201.html">의료시설 안내</a>
+                            </li>
+                            <li>
+                                <a href="index00202.html">휴일 지킴이 야국</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index00301.html">국/공립 어린이집</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00301.html">국/공립 어린이집이란?</a>
+                            </li>
+                            <li>
+                                <a href="index00302.html">국/공립 어린이집현황</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index00401.html">축제/행사</a>
+                    </li>
+                    <li>
+                        <a href="index00501.html">아이와 가볼만한곳</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00501.html">견학/체험 신청</a>
+                            </li>
+                            <li>
+                                <a href="index00502.html">문화시설</a>
+                            </li>
+                            <li>
+                                <a href="index00503.html">테마여행</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="loginWrap member">
+            <div class="login utilLogin">
+                <form action="">
+                    <input type="text" placeholder="아이디">
+                    <input type="text" placeholder="비밀번호">
+                    <button>LOGIN</button>
+                </form>
+                <ul>
+                    <li>
+                        <a href="#">아이디 찾기</a>
+                    </li>
+                    <li>
+                        <a href="#">비밀번호 찾기</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                </ul>
+                <button class="close">X</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="maincontent">
+                <div class="bn swiper mySwiper">
+                    <div class="bnWrap swiper-wrapper">
+
+                    </div>
+                </div><!--slide-->
+
+                <div class="row1">
+                    <h2>아이와 함께</h2>
+                    <div class="wrap">
+                        <div class="mom">
+                            <h3>수유 가능시설</h3>
+                            <form>
+                                부산시 : 
+                                <select name="city" id="city" class="city">
+                                    <option value="기장군">기장군</option>
+                                    <option value="사상구">사상구</option>
+                                    <option value="수영구">수영구</option>
+                                    <option value="연제구">연제구</option>
+                                    <option value="강서구">강서구</option>
+                                    <option value="금정구">금정구</option>
+                                    <option value="사하구">사하구</option>
+                                    <option value="해운대구">해운대구</option>
+                                    <option value="북구">북구</option>
+                                    <option value="남구">남구</option>
+                                    <option value="동래구">동래구</option>
+                                    <option value="부산진구">부산진구</option>
+                                    <option value="영도구">영도구</option>
+                                    <option value="동구">동구</option>
+                                    <option value="서구">서구</option>
+                                    <option value="중구">중구</option>
+                                </select>
+                                <input type="checkbox" class="checkbox">아빠와같이
+                                <button class="momResearch">검색</button><br>
+    
+                            </form>
+                            <p>
+                            <span class="momsj">지점명</span>
+                            <span class="momad">주소</span>
+                            <span class="momtel">전화번호</span>
+                            <span class="momfather">아버지<br>동반</span>
+                            </p>    
+                            <ul class="data-list scrollable"></ul>
+                        </div><!--mom-->
+    
+                        <div class="info">
+                            <div class="item">
+                                <a href="http://info.childcare.go.kr/info/pnis/search/MapSlL.jsp?   ctprvn_map=26">
+                                    <div class="photo photo1"><img src="images/obj_main_2_001.png"  alt="어린이집 포털"></div>
+                                    <div class="tit tit1">어린이집 포털</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://www.pharm114.or.kr/main.asp">
+                                    <div class="photo photo2"><img src="images/obj_main_2_003.png"  alt="약국/병원"></div>
+                                    <div class="tit tit2">휴일지킴이 약국</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://reserve.busan.go.kr/exprn/list">
+                                    <div class="photo photo3"><img src="images/obj_main_2_004.png"  alt="아이와 가볼만한곳"></div>
+                                    <div class="tit tit3">견학/체험 신청</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="photo photo4"><img src="images/obj_main_2_005.png"  alt="아이돌봄지원사업"></div>
+                                    <div class="tit tit4">아이돌봄 <br>지원사업</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="http://www.childcare.go.kr/cpin/contents/040301010000.jsp">
+                                    <div class="photo photo5"><img src="images/obj_main_2_006.png"  alt="국민행복카드 안내"></div>
+                                    <div class="tit tit5">국민행복카드 <br>안내</div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="index00101.html">
+                                    <div class="photo photo6"><img src="images/kidsca.jpg"  alt="키즈카페"></div>
+                                    <div class="tit tit6">키즈카페</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--row1-->
+                <div class="row2">
+                    <h2>엄마! 아빠! 놀러갈래요</h2>
+                    <div class="wrap">
+                    
+                        <div class="row2Left">
+                            <h3 class="tit">
+                                테마여행
+                            </h3>
+                            <div class="themaTravel swiper mySwiper">
+                                <div class="themaTravelWrapper swiper-wrapper"></div>
+
+                            </div>
+                        </div>
+
+
+                            <div class="row2Right">
+                                <h3 class="tit">
+                                    키즈카페
+                                </h3>
+                                <p>
+                                    <span class="kindsj">지점명</span>
+                                    <span class="kindad">해당구</span>
+                                    <span class="kindtel">전화번호</span>
+                                </p>
+                                <div class="kindCafe">
+                                    <ul class="kindCafeList scrollable">
+                                    
+                                    </ul>
+                                </div>
+                            </div><!--row2Left-->
+                    </div><!--row2Wrap-->
+                </div><!--row2-->
+            </div><!--content-->
+
+
+        </div>
+    </div><!--main-->
+
+    <footer>
+        <p>Copyright © Lee Jae Hee All rights reserved</p>
+    </footer>
+
+
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/total.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+    </script>
+    <script>
+
+        function fromchange(values){
+            if(typeof values == "undefined" || typeof values == "null"){
+                return "";
+            }else{
+                return values;
+            }
+        }
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////xml jason으로
+ 
+       
+        /////////////////////////////////////////////////////////////////////////////////////////////////////festival
+        var festival = new XMLHttpRequest();
+        var fetivalUrl = 'http://apis.data.go.kr/6260000/FestivalService/getFestivalKr'; /*fetivalUrl*/
+        let festivalserviceKey = 'erdojj57tv96GP5fMEvebnNgj4mB502SRMV%2BAj5%2F459z8MOpcA%2FVijKhuwYxuIvS6YMOvYj1L4zEFLSRrRSTGA%3D%3D';
+        var festivalqueryParams = '?' + encodeURIComponent('serviceKey') + '='+ festivalserviceKey; /*Service Key*/
+        festivalqueryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('20'); /**/
+        festivalqueryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+        // festivalqueryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent('json'); /**/
+        // festivalqueryParams += '&' + encodeURIComponent('UC_SEQ') + '=' + encodeURIComponent(''); /**/
+
+        // let fetivalUrl = "http://apis.data.go.kr/6260000/FestivalService/getFestivalKr?serviceKey=" + serviceKey + "&numOfRows=10&pageNo=1"
+        festival.open('GET', fetivalUrl + festivalqueryParams);
+        festival.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                let res = this.responseText;
+                let resJSON = new DOMParser().parseFromString(res, 'text/xml');
+                resJSON = xmlToJson(resJSON);
+                let items = resJSON.response.body.items.item
+                for(let i = 0; i<items.length; i++) {
+                    let bnItem = document.createElement('div');
+
+                //    <div class="swiper-button-next"></div>
+                //<div class="swiper-button-prev"></div>
+                    $(bnItem).addClass('swiper-slide').addClass('bnItem')
+                    
+                    
+                    $('.bnWrap').append(bnItem)
+                    
+                    let itemTit = [items[i].TITLE]
+                    let itemthum = [items[i].MAIN_IMG_NORMAL]
+                    let itemdate = [items[i].USAGE_DAY_WEEK_AND_TIME]
+                    let itemhome = [items[i].HOMEPAGE_URL]
+                    $('.bnItem').eq(i).html(`<a href="${itemhome}"><img src="${itemthum}" alt=""><h2>${itemTit}<p class= "itemdate">${itemdate}</p></h2></a>`) 
+                    //$('h2').eq(1).text(itemTit)
+
+                }
+
+                let swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }
+                    
+                });
+            }
+        };
+ 
+
+        festival.send('');
+
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////mom
+        let momXhr = new XMLHttpRequest();
+        let momkey = `erdojj57tv96GP5fMEvebnNgj4mB502SRMV%2BAj5%2F459z8MOpcA%2FVijKhuwYxuIvS6YMOvYj1L4zEFLSRrRSTGA%3D%3D`
+        let url = 'http://apis.data.go.kr/6260000/BusanNursingroomInfoService/getNursingroomInfo'; /*URL*/
+        let queryParams = '?' + encodeURIComponent('serviceKey') + '='+ momkey; /*Service Key*/
+        queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('308'); /**/
+        queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+        //queryParams += '&' + encodeURIComponent('sj') + '=' + encodeURIComponent('영도도서관'); /**/
+        //queryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent('json'); /**/
+        
+        momXhr.open('GET', url + queryParams);
+        momXhr.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                let res = this.responseText;
+                let resJSON = new DOMParser().parseFromString(res, 'text/xml');
+                    resJSON = xmlToJson(resJSON);
+                    let items = resJSON.response.body.items.item
+
+                    for(let i = 0 ; i < items.length ; i++){
+                    let momli = document.createElement('li')
+                    let momfather = [items[i].father]
+                    let momsj = [items[i].sj]
+                    let momtel = [items[i].tel]
+                    let momsigungu = [items[i].sigungu]
+                    let momaddress = [items[i].address]
+
+                        momaddress = String(momaddress)
+                    let momaddressgu = momaddress.indexOf('구'); 
+                        if(momaddressgu != -1){
+                            momaddress = String(momaddress.split('구 ')[1])
+                            $(".row1 ul").append(`<li class="momli"><span class="momsj">${momsj}</span> <span class="momad">${momaddress}</span> <span class="momtel">${momtel}</span><span class= "momfather">${momfather}</span><p class="sigungu">${momsigungu}</p></li>`)
+                        }else{
+                            momaddress = momaddress.split('군')[1]
+                            $(".row1 ul").append(`<li class="momli"><span class="momsj">${momsj}</span> <span class="momad">${momaddress}</span> <span class="momtel">${momtel}</span><span class= "momfather">${momfather}</span><p class="sigungu">${momsigungu}</p></li>`)
+                        }
+
+
+                }
+
+            }
+
+        };
+        momXhr.send('');
+
+
+        $('.momResearch').on('click',function(e){
+            e.preventDefault();
+            let selSigungu = $('.city').val();
+            let selfather = '';
+            if($('.checkbox').is(":checked")){
+                selfather = '가능'
+            }else{
+                selfather = '불가'
+            }
+            $('.momli').remove()
+            momXhr.open('GET', url + queryParams);
+            momXhr.onreadystatechange = function () {
+            if (this.readyState == 4) {
+                let res = this.responseText;
+                let resJSON = new DOMParser().parseFromString(res, 'text/xml');
+                    resJSON = xmlToJson(resJSON);
+                let items = resJSON.response.body.items.item
+
+                //let result = items.map((item, i) => items[i].sigungu === selSigungu ? items[i] : "");
+
+                
+                for(let i = 0 ; i < items.length ; i++){
+                    if(items[i].sigungu === selSigungu && items[i].father == selfather) {
+                        let momfather = items[i].father
+                        let momsj = items[i].sj
+                        let momtel = items[i].tel
+                        let momsigungu = items[i].sigungu
+                        let momaddress = items[i].address
+                        let momaddressgu = momaddress.indexOf('구'); 
+                        if(momaddressgu != -1){
+                            momaddress = momaddress.split('구 ')[1]
+                            $(".row1 ul").append(`<li class="momli"><span class="momsj">${momsj}</span> <span class="momad">${momaddress}</span> <span class="momtel">${momtel}</span><span class= "momfather">${momfather}</span><p class="sigungu">${momsigungu}</p></li>`)
+                        }else{
+                            momaddress = momaddress.split('군')[1]
+                            $(".row1 ul").append(`<li class="momli"><span class="momsj">${momsj}</span> <span class="momad">${momaddress}</span> <span class="momtel">${momtel}</span><span class= "momfather">${momfather}</span><p class="sigungu">${momsigungu}</p></li>`)
+                        }
+
+                            
+                    }
+                }
+            }
+        };
+        momXhr.send('');
+            
+        })
+
+
+
+    let kindxhr = new XMLHttpRequest();
+    let kindurl = 'http://apis.data.go.kr/6260000/BusanKidsCafeInfoService/getKidsCafeInfo';
+    let kindKey = 'erdojj57tv96GP5fMEvebnNgj4mB502SRMV%2BAj5%2F459z8MOpcA%2FVijKhuwYxuIvS6YMOvYj1L4zEFLSRrRSTGA%3D%3D'
+    let kindqueryParams = '?' + encodeURIComponent('serviceKey') + '='+ kindKey;
+    kindqueryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('100');
+    kindqueryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); 
+    // kindqueryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent('xml'); 
+    kindxhr.open('GET', kindurl + kindqueryParams);
+    kindxhr.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            let res = this.responseText;
+            let resJSON = new DOMParser().parseFromString(res, 'text/xml');
+                resJSON = xmlToJson(resJSON);
+            let items = resJSON.response.body.items.item
+            for(let i = 0 ; i < items.length ; i++){
+
+                if(items[i].tel_no != '[object Object]' && items[i].road_nm != ""){
+                    let kindName = items[i].cafe_nm
+                    let kindTel = items[i].tel_no
+                    let kindGugun = items[i].gugun
+                    
+
+                        $('.kindCafeList').append(`<li class="kindCafeLi"><span     class="kindcafeName">${kindName}</span><span class="kindRoadNm">${kindGugun}</span><span class="kintCafeTel">
+                        ${kindTel}</span></li>`)
+                }
+            }
+        }
+    };
+
+    kindxhr.send('');
+
+
+    let Travelxhr = new XMLHttpRequest();
+    let Travelurl = 'http://apis.data.go.kr/6260000/RecommendedService/getRecommendedKr'; 
+    let Travelkey = 'erdojj57tv96GP5fMEvebnNgj4mB502SRMV%2BAj5%2F459z8MOpcA%2FVijKhuwYxuIvS6YMOvYj1L4zEFLSRrRSTGA%3D%3D'
+    let TravelqueryParams = '?' + encodeURIComponent('serviceKey') + '='+Travelkey; 
+    TravelqueryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1');
+    TravelqueryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); 
+    // TravelqueryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent(''); 
+    // TravelqueryParams += '&' + encodeURIComponent('UC_SEQ') + '=' + encodeURIComponent(''); 
+    Travelxhr.open('GET', Travelurl + TravelqueryParams);
+    Travelxhr.onreadystatechange = function () {
+        if (this.readyState == 4) {
+            let res = this.responseText;
+            let resJSON = new DOMParser().parseFromString(res, 'text/xml');
+                resJSON = xmlToJson(resJSON);
+            let items = resJSON.response.body.items.item
+            for( let i = 0 ; i < items.length ; i++){
+                let itemsThum = items[i].MAIN_IMG_THUMB
+                let itemsTit = items[i].TITLE
+                $('.themaTravelWrapper').append(`<div class = "itemsThum swiper-slide"><a href="#"><img src = "${itemsThum}"></a><div class = "travelCover">${itemsTit}</div></div>`)
+            }
+
+            let swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }
+                
+            });
+        }
+    };
+
+    Travelxhr.send('');
+
+
+
+        
+    </script>
+</body>
+</html>

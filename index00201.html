@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/total.css">
+    <link rel="stylesheet" href="css/style00201.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="wrap">
+                <h1>logo</h1>
+                <ul class="util">
+                    <li>
+                        <a href="#">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                    </li>
+                </ul>
+                <ul class="gnb">
+                    <li>
+                        <a href="index00101.html" class="kids">키즈카페</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00101.html">공공형 키즈카페</a>
+                            </li>
+                            <li>
+                                <a href="index00102.html">부산시 키즈카페</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index00201.html">의료</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00201.html">의료시설 안내</a>
+                            </li>
+                            <li>
+                                <a href="index00202.html">휴일 지킴이 야국</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <a href="index00301.html">국/공립 어린이집</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00301.html">국/공립 어린이집이란?</a>
+                            </li>
+                            <li>
+                                <a href="index00302.html">국/공립 어린이집현황</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index00401.html">축제/행사</a>
+                    </li>
+                    <li>
+                        <a href="index00501.html">아이와 가볼만한곳</a>
+                        <ul class="sub">
+                            <li>
+                                <a href="index00501.html">견학/체험 신청</a>
+                            </li>
+                            <li>
+                                <a href="index00502.html">문화시설</a>
+                            </li>
+                            <li>
+                                <a href="index00503.html">테마여행</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="loginWrap member">
+            <div class="login utilLogin">
+                <form action="">
+                    <input type="text" placeholder="아이디">
+                    <input type="text" placeholder="비밀번호">
+                    <button>LOGIN</button>
+                </form>
+                <ul>
+                    <li>
+                        <a href="#">아이디 찾기</a>
+                    </li>
+                    <li>
+                        <a href="#">비밀번호 찾기</a>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                </ul>
+                <button class="close">X</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="wrap">
+                <div class="leftLine">
+                    <h3 class="tit">의료</h3>
+                    <ul class="leftUl">
+                        <li>
+                            <a href="index00201.html">의료시설 안내</a>
+                        </li>
+                        <li>
+                            <a href="index00202.html">휴일 지킴이 약국</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rightLine">
+                    <h3 class="location">
+                        <p>홈 > 의료 > 의료시설 안내</p> 
+                        <div class="search">
+                            <select name="gugun" id="gugun" class="gugun">
+                                <option value="기장군">기장군</option>
+                                <option value="사상구">사상구</option>
+                                <option value="수영구">수영구</option>
+                                <option value="연제구">연제구</option>
+                                <option value="강서구">강서구</option>
+                                <option value="금정구">금정구</option>
+                                <option value="사하구">사하구</option>
+                                <option value="해운대구">해운대구</option>
+                                <option value="북구">북구</option>
+                                <option value="남구">남구</option>
+                                <option value="동래구">동래구</option>
+                                <option value="부산진구">부산진구</option>
+                                <option value="영도구">영도구</option>
+                                <option value="동구">동구</option>
+                                <option value="서구">서구</option>
+                                <option value="중구">중구</option>                        
+                            </select>
+                        </div>
+                    </h3>
+                    <div class="contain">
+                        <h4>약국</h4>
+                        <div class="row1 scrollable">
+
+                        </div>
+                        <h4>병원</h4>
+                        <div class="row2 scrollable">
+
+                        </div>
+
+                    </div>
+                </div><!--rightLine-->
+            </div><!--wrap-->
+        </div>
+    </div>
+
+        <footer>
+            <p>Copyright © Lee Jae Hee All rights reserved</p>
+        </footer>
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/total.js"></script>
+        <script>
+            let xhr = new XMLHttpRequest();
+            let url = 'http://apis.data.go.kr/6260000/MedicInstitService/MedicalInstitInfo'; /*URL*/
+            let key = 'erdojj57tv96GP5fMEvebnNgj4mB502SRMV%2BAj5%2F459z8MOpcA%2FVijKhuwYxuIvS6YMOvYj1L4zEFLSRrRSTGA%3D%3D'
+            let queryParams = '?' + encodeURIComponent('serviceKey') + '='+ key; /*Service Key*/
+            queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+            queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('1000'); /**/
+            // queryParams += '&' + encodeURIComponent('resultType') + '=' + encodeURIComponent('json'); /**/
+
+            
+            xhr.open('GET', url + queryParams);
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    let res = this.responseText;
+                    let resJSON = new DOMParser().parseFromString(res, 'text/xml');
+                        resJSON = xmlToJson(resJSON);
+                    let items = resJSON.response.body.items.item
+                        console.log(items)
+                    for( let i = 0 ; i < items.length ; i++){
+                        let itemKind = items[i].instit_kind
+                        let itemName = items[i].instit_nm
+                        let itemTel = items[i].tel
+                        let itemAdd = items[i].street_nm_addr
+                        if(itemKind == "약국" && itemTel != '[object Object]'){
+                            $('.row1').append(`
+                                <div class = "item">
+                                    <div>
+                                        ${itemName}
+                                    </div>
+                                    <div>
+                                        ${itemAdd}
+                                    </div>
+                                    <div>
+                                        ${itemTel}
+                                    </div>
+                                </div>
+                            `)
+                        }else if(itemKind == "병원" && itemTel != '[object Object]'){
+                            $('.row2').append(`
+                            <div class = "item">
+                                    <div>
+                                        ${itemName}
+                                    </div>
+                                    <div>
+                                        ${itemAdd}
+                                    </div>
+                                    <div>
+                                        ${itemTel}
+                                    </div>
+                                </div>
+                            `)
+                        }
+                    }
+                }
+            };
+
+            xhr.send('');
+
+
+
+            $('.gugun').on('change',function(){
+                $('.item').remove();
+                xhr.open('GET', url + queryParams);
+                xhr.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    let res = this.responseText;
+                    let resJSON = new DOMParser().parseFromString(res, 'text/xml');
+                        resJSON = xmlToJson(resJSON);
+                    let items = resJSON.response.body.items.item
+                        console.log(items)
+
+                    for( let i = 0 ; i < items.length ; i++){
+                        let itemKind = items[i].instit_kind
+                        let itemName = items[i].instit_nm
+                        let itemTel = items[i].tel
+                        let itemAdd = items[i].street_nm_addr
+                        let a = $('.gugun').val();
+                        let b = itemAdd
+                            b = String(itemAdd).indexOf(a)
+                       console.log(b)
+                        if(itemKind == "약국" && b != -1){
+                            $('.row1').append(`
+                                <div class = "item">
+                                    <div>
+                                        ${itemName}
+                                    </div>
+                                    <div>
+                                        ${itemAdd}
+                                    </div>
+                                    <div>
+                                        ${itemTel}
+                                    </div>
+                                </div>
+                            `)
+                        }else if(itemKind == "병원" && b != -1){
+                            $('.row2').append(`
+                            <div class = "item">
+                                    <div>
+                                        ${itemName}
+                                    </div>
+                                    <div>
+                                        ${itemAdd}
+                                    </div>
+                                    <div>
+                                        ${itemTel}
+                                    </div>
+                                </div>
+                            `)
+                        }
+                    }
+                }
+            };
+
+            xhr.send('');
+            })
+
+        </script>
+</body>
+</html>

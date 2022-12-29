@@ -1,0 +1,102 @@
+.leftLine li:first-child{
+    color: orange;
+    scale: 1.5;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 24px;
+    position: relative;
+    padding-top: 20px;
+}
+
+h4:not(:first-child):after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+}
+
+.rightLine .info:nth-child(2){
+    background-color: orange;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rightLine .info{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.contain .info:nth-child(4){
+    margin-bottom: 40px;
+}
+
+.firstWrap{
+    display: flex;
+    border-top: 5px solid orange;
+}
+
+.firstWrap .line1{
+    width: 20%;
+    text-align: center;
+    
+}
+
+.firstWrap .line1 li{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstWrap .line1 li:nth-child(2){
+    height: 120px;
+}
+
+.firstWrap .line1 li:last-child{
+    height: 160px;
+}
+
+.firstWrap .line2, .firstWrap .line3{
+    width: 40%;
+    text-align: center;
+}
+
+.firstWrap .line2 li, .firstWrap .line3 li{
+    justify-content: center;
+    align-items: center;
+}
+
+.firstWrap .line2 li:last-child, .firstWrap .line3 li:last-child{
+    text-align: start;
+    padding: 10px;
+    height: 160px;
+}
+
+.firstWrap .line2 li:not(:last-child), .firstWrap .line3 li:not(:last-child){
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstWrap .line1 li, .firstWrap .line2 li, .firstWrap .line3 li{
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+
+.firstWrap p{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}

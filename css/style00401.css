@@ -1,0 +1,48 @@
+.contain{
+    padding: 0 20px;
+    padding-right: 0;
+}
+
+.itemWrap{
+    display: flex;
+    margin-top: 20px;
+}
+
+.rightLine .text{
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 320px;
+    overflow: auto;
+}
+
+.rightLine h4{
+    color: orange;
+    font-size: 22px;
+}
+
+.search{
+    margin-right: 40px;
+}
+
+.rightLine .text p{
+    margin: 20px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+.rightLine .text span{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.festHome button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    border: 0;
+    background-color: orange;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
